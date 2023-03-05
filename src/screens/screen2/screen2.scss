@@ -1,0 +1,422 @@
+.screen2 {
+  display: flex;
+  .back-page {
+    display: flex;
+    align-items: center;
+    .back-page__text {
+      color: #744ced;
+    }
+  }
+  .form {
+    .form__title {
+      font-weight: 600;
+      color: #1f1d1c;
+    }
+    .form__subtitle {
+      font-weight: 300;
+      color: #4a3c73;
+    }
+
+    .form__inpContainer {
+      display: flex;
+      position: relative;
+      .form__inpContainer__input {
+        border: 1px solid #f1ecff;
+        color: #1f1d1c;
+        border-radius: 0.52vw;
+        outline-color: #744ced;
+      }
+      .form__inpContainer__input::placeholder {
+        color: #a197bd;
+        font-weight: 300;
+      }
+      .form__inpContainer__showPassword {
+        position: absolute;
+      }
+      .form__inpContainer__btn {
+        background: #744ced;
+        border-radius: 100px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f6f9fa;
+      }
+    }
+
+    .form__entry,
+    .form__registration {
+      display: flex;
+      align-items: center;
+    }
+    .form__registration__quest,
+    .form__entry__quest {
+      font-weight: 300;
+      color: #4a3c73;
+    }
+    .form__entry__quest_small {
+      font-weight: 300;
+      color: #4a3c73;
+    }
+    .form__registration__link,
+    .form__entry__link {
+      cursor: pointer;
+      font-weight: 400;
+      color: #744ced;
+    }
+  }
+  .support {
+    display: flex;
+    position: relative;
+    .support__text {
+      color: #744ced;
+      cursor: pointer;
+    }
+    .support__ellipse {
+      position: absolute;
+      cursor: pointer;
+    }
+    .support__img {
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+  .right-side-block {
+    position: relative;
+    background: #f8f8fe;
+    img {
+      position: absolute;
+    }
+  }
+  .footer__company {
+    color: #4a3c73;
+    cursor: pointer;
+    font-weight: 300;
+  }
+  .footer__rights_small {
+    display: none;
+  }
+  .footer__rights_large {
+    color: #a197bd;
+    font-weight: 300;
+  }
+  .footer__politicLang {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .footer__politicLang__politicWrapper {
+      display: flex;
+    }
+    .footer__politicLang__politic {
+      color: #744ced;
+      cursor: pointer;
+      font-weight: 400;
+    }
+    .footer__politicLang__langContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      .footer__politicLang__politicWrapper {
+        display: block;
+      }
+      .langContainer__text {
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .screen2 {
+    .left-side-block {
+      width: 100%;
+      margin-left: 4.44vw;
+      margin-right: 4.44vw;
+    }
+    .back-page {
+      margin-top: 12.5vw;
+      padding: 0 2.08vw;
+      .back-page__img {
+        height: 5vw;
+      }
+      .back-page__text {
+        font-size: 3.88vw;
+        margin-left: 2.77vw;
+      }
+    }
+    .form {
+      margin-top: 18.33vw;
+      width: 100%;
+      .form__logo {
+        margin-bottom: 19.44vw;
+        width: 26.67vw;
+        padding: 0.21vw;
+      }
+      .form__title {
+        font-size: 5.56vw;
+        margin-bottom: 5.56vw;
+      }
+      .form__subtitle {
+        width: 63vw;
+        font-size: 4.44vw;
+        margin-bottom: 19.44vw;
+      }
+      .form__inpContainer {
+        display: block;
+        margin-bottom: 13.89vw;
+        .form__inpContainer__input {
+          display: block;
+          width: 74.89vw;
+          padding: 4.17vw 1.77vw 4.17vw 5.56vw;
+          border: 1px solid #f1ecff;
+          color: #1f1d1c;
+          font-size: 3.89vw;
+          outline-color: #744ced;
+          margin-bottom: 5.56vw;
+        }
+
+        .form__inpContainer__showPassword {
+          width: 6vw;
+          top: 4vw;
+          left: 86vw;
+        }
+        .form__inpContainer__btn {
+          margin-left: 0;
+          width: 100%;
+          height: 11.67vw;
+          padding: 2.78vw 6.67vw;
+
+          .inputContainer__btn__text {
+            font-size: 4.44vw;
+            margin-right: 2.22vw;
+          }
+          img {
+            width: 5.56vw;
+          }
+        }
+      }
+      .form__entry,
+      .form__registration {
+        padding: 3.06vw 0;
+        font-size: 3.89vw;
+      }
+      .form__registration__quest {
+        margin-right: 2.78vw;
+      }
+      .form__entry__quest {
+        display: none;
+      }
+      .form__entry__quest_small {
+        margin-right: 2.78vw;
+      }
+    }
+    .support {
+      margin-left: 41.39vw;
+      margin-bottom: 0;
+      padding: 7.08vw 0;
+      .support__text {
+        margin-right: 2.78vw;
+        font-size: 3.89vw;
+      }
+      .support__ellipse {
+        width: 15.5vw;
+        top: 4vw;
+        left: 33vw;
+      }
+      .support__img {
+        width: 5.28vw;
+        top: 6.3vw;
+        left: 38.3vw;
+      }
+    }
+    .right-side-block {
+      display: none;
+    }
+    .footer {
+      padding-top: 1.67vw;
+    }
+    .footer__company {
+      font-size: 3.89vw;
+      padding: 1.67vw 0 2.78vw 0;
+    }
+    .footer__rights_large {
+      display: none;
+    }
+    .footer__rights {
+      margin-bottom: 2.78vw;
+    }
+    .footer__rights_small {
+      display: block;
+      margin-bottom: 0.56vw;
+      color: #a197bd;
+      font-size: 2.78vw;
+      font-weight: 300;
+    }
+    .footer__politicLang {
+      position: relative;
+      margin-bottom: 8.89vw;
+      .footer__politicLang__politicWrapper {
+        display: block;
+      }
+      .footer__politicLang__politic {
+        margin-right: 13.33vw;
+        padding: 2.08vw 0;
+        font-size: 3.89vw;
+      }
+      .footer__politicLang__langContainer {
+        .langContainer__img {
+          margin-right: 1.67vw;
+          width: 7.5vw;
+          margin-top: 9.44vw;
+        }
+        .langContainer__text {
+          font-size: 3.89vw;
+          margin-top: 9.44vw;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .screen2 {
+    .left-side-block {
+      width: 42.5vw;
+      margin-left: 17.7vw;
+    }
+    .back-page {
+      margin-top: 4.06vw;
+      padding: 0 0.73vw;
+      .back-page__img {
+        height: 0.94vw;
+      }
+      .back-page__text {
+        font-size: 0.73vw;
+        margin-left: 0.52vw;
+      }
+    }
+    .form {
+      margin-top: 8.15vw;
+      margin-bottom: 12.4vw;
+      width: 31.77vw;
+      .form__logo {
+        margin-bottom: 2.6vw;
+        width: 5vw;
+        padding: 0.21vw;
+      }
+      .form__title {
+        font-size: 1.46vw;
+        margin-bottom: 1.04vw;
+      }
+      .form__subtitle {
+        width: 25.31vw;
+        font-size: 0.94vw;
+        margin-bottom: 2.6vw;
+      }
+      .form__inpContainer {
+        margin-bottom: 1.56vw;
+
+        .form__inpContainer__input {
+          width: 12.92vw;
+          padding: 0.78vw 1.77vw 0.78vw 1.04vw;
+          font-size: 0.73vw;
+          margin-right: 2.71vw;
+        }
+        .form__inpContainer__showPassword {
+          top: 0.5vw;
+          width: 1.6vw;
+          left: 16.4vw;
+        }
+        .form__inpContainer__btn {
+          margin-left: 1.04vw;
+
+          padding: 0.63vw 1.25vw;
+          .inputContainer__btn__text {
+            font-size: 0.9375vw;
+            margin-right: 0.63vw;
+          }
+          img {
+            width: 1.25vw;
+          }
+        }
+      }
+      .form__entry,
+      .form__registration {
+        padding: 0.442vw 0;
+        font-size: 0.9375vw;
+      }
+      .form__registration {
+        margin-bottom: 0.52vw;
+      }
+      .form__entry {
+        margin-bottom: 12.03vw;
+      }
+      .form__registration__quest,
+      .form__entry__quest {
+        margin-right: 0.52vw;
+      }
+      .form__entry__quest_small {
+        display: none;
+      }
+    }
+    .support {
+      margin-left: 30.5vw;
+      margin-bottom: 1vw;
+      .support__text {
+        margin-right: 1.04vw;
+        font-size: 0.73vw;
+      }
+      .support__ellipse {
+        width: 4.65vw;
+        top: -1.3vw;
+        left: 6.35vw;
+      }
+      .support__img {
+        width: 1.4vw;
+        top: -0.4vw;
+        left: 8vw;
+      }
+    }
+    .right-side-block {
+      width: 39.8vw;
+      height: 100vh;
+      img {
+        width: 37.7vw;
+        height: 35.36vw;
+        top: 12.4vw;
+        left: 2.1vw;
+      }
+    }
+    .footer__company {
+      font-size: 0.83vw;
+      margin-bottom: 0.36vw;
+      margin-top: 0.31vw;
+      font-weight: 300;
+    }
+
+    .footer__rights_large {
+      margin-bottom: 0.1vw;
+      font-size: 0.52vw;
+      font-weight: 300;
+    }
+    .footer__politicLang {
+      margin-top: 0.52vw;
+      padding: 0.39vw 0;
+      .footer__politicLang__politic {
+        margin-right: 3.13vw;
+        font-size: 0.73vw;
+      }
+      .footer__politicLang__langContainer {
+        .langContainer__img {
+          margin-right: 0.31vw;
+          width: 1.41vw;
+        }
+
+        .langContainer__text {
+          font-size: 0.73vw;
+        }
+      }
+    }
+  }
+}
