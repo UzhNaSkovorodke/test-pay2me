@@ -57,7 +57,7 @@ const Screen3: React.FunctionComponent<IScreen3Props> = props => {
             <h1 className="form__title">Что-то пошло не так</h1>
             <p className="form__subtitle">Вы ввели неверный логин или пароль.</p>
 
-            <label>
+            <div>
               <div className="form__inpContainer">
                 <input
                   className={`form__inpContainer__input input__email ${
@@ -80,9 +80,9 @@ const Screen3: React.FunctionComponent<IScreen3Props> = props => {
                   Возможно, электронная почта введена некорректно. Попробуйте ещё раз.
                 </p>
               )}
-            </label>
+            </div>
 
-            <label>
+            <div>
               <div className="form__inpContainer input__password">
                 <input
                   className={`form__inpContainer__input ${isPasswordFall && 'input__fall'}`}
@@ -110,7 +110,7 @@ const Screen3: React.FunctionComponent<IScreen3Props> = props => {
                   Возможно, пароль введён некорректно. Попробуйте ещё раз.
                 </p>
               )}
-            </label>
+            </div>
 
             <div>
               <button
@@ -119,7 +119,7 @@ const Screen3: React.FunctionComponent<IScreen3Props> = props => {
                 }`}
                 onClick={e => checkHandler(e)}
               >
-                <p className="inputContainer__btn__text">Далее</p>
+                <div className="inputContainer__btn__text">Далее</div>
                 <img src={arrowRightIcon} alt="стрелка вправо" />
               </button>
             </div>
@@ -143,7 +143,7 @@ const Screen3: React.FunctionComponent<IScreen3Props> = props => {
         </main>
 
         <footer>
-          <section>
+          <div>
             <div className="footer__company">© PAY2ME 2023</div>
             <div className="footer__rights">
               <p className="footer__rights_large">ООО «Куарми» ИНН 7743364603</p>
@@ -170,7 +170,7 @@ const Screen3: React.FunctionComponent<IScreen3Props> = props => {
                 <p className="langContainer__text">Ru</p>
               </div>
             </div>
-          </section>
+          </div>
         </footer>
       </div>
       <div className="right-side-block">

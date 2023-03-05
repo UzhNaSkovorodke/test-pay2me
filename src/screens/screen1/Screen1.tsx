@@ -29,7 +29,7 @@ const Screen1: React.FunctionComponent<IScreen1Props> = props => {
               Войдите, чтобы начать использовать платёжные решения PAY2ME.
             </p>
 
-            <label className="form__inpContainer">
+            <div className="form__inpContainer">
               <input
                 name="phoneNumber"
                 className="form__inpContainer__input_large"
@@ -43,10 +43,10 @@ const Screen1: React.FunctionComponent<IScreen1Props> = props => {
                 placeholder="Номер телефона или электронная почта"
               />
               <button className="form__inpContainer__btn">
-                <p className="inputContainer__btn__text">Далее</p>
+                <div className="inputContainer__btn__text">Далее</div>
                 <img src={arrowRightIcon} alt="стрелка вправо" />
               </button>
-            </label>
+            </div>
 
             <div className="form__registration">
               <p className="form__registration__quest">У вас ещё нет аккаунта?</p>
@@ -69,7 +69,7 @@ const Screen1: React.FunctionComponent<IScreen1Props> = props => {
         </main>
 
         <footer>
-          <section>
+          <div>
             <div className="footer__company">© PAY2ME 2023</div>
             <div className="footer__rights">
               <p className="footer__rights_large">ООО «Куарми» ИНН 7743364603</p>
@@ -118,7 +118,7 @@ const Screen1: React.FunctionComponent<IScreen1Props> = props => {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </footer>
       </div>
       <div className="right-side-block">

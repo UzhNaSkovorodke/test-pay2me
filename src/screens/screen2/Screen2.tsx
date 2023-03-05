@@ -27,7 +27,7 @@ const Screen2: React.FunctionComponent<IScreen2Props> = props => {
             <h1 className="form__title">Здравствуйте, Вадим!</h1>
             <p className="form__subtitle">Введите пароль для номера +7 (988) ****-**-45.</p>
 
-            <label className="form__inpContainer">
+            <div className="form__inpContainer">
               <input
                 name="password"
                 className="form__inpContainer__input"
@@ -41,10 +41,10 @@ const Screen2: React.FunctionComponent<IScreen2Props> = props => {
               />
 
               <button className="form__inpContainer__btn">
-                <p className="inputContainer__btn__text">Далее</p>
+                <div className="inputContainer__btn__text">Далее</div>
                 <img src={arrowRightIcon} alt="стрелка вправо" />
               </button>
-            </label>
+            </div>
 
             <div className="form__registration">
               <p className="form__registration__quest">Это не мой номер.</p>
@@ -66,7 +66,7 @@ const Screen2: React.FunctionComponent<IScreen2Props> = props => {
         </main>
 
         <footer>
-          <section>
+          <div>
             <div className="footer__company">© PAY2ME 2023</div>
             <div className="footer__rights">
               <p className="footer__rights_large">ООО «Куарми» ИНН 7743364603</p>
@@ -93,7 +93,7 @@ const Screen2: React.FunctionComponent<IScreen2Props> = props => {
                 <p className="langContainer__text">Ru</p>
               </div>
             </div>
-          </section>
+          </div>
         </footer>
       </div>
       <div className="right-side-block">
